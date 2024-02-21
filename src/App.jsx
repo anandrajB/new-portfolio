@@ -1,7 +1,15 @@
-export default function App() {
+import Main from './Components/Main'
+import Sidenav from './Components/Sidenav'
+
+import React from 'react'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold display-flex">
-      Hello world!
-    </h1>
+    <div>
+      <Sidenav />
+      <Main />
+    </div>
   )
 }
+
+export default App
