@@ -3,7 +3,9 @@ import Sidenav from './Components/Sidenav'
 
 import React from 'react'
 import Work from './Components/Work'
-import Projects from './Components/Projects'
+import Pr from './Components/Pr'
+import Testimonals from './Components/Testimonals'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -11,7 +13,9 @@ const App = () => {
       <Sidenav />
       <Main />
       <Work />
-      <Projects />
+      <Pr />
+      <Testimonals />
+      <Footer />
     </div>
   )
 }
