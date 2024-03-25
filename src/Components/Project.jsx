@@ -139,9 +139,17 @@ const Project = () => {
 
                                 <div className="group relative">
                                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                        <a href={post.href}>
+                                        <a >
                                             <span className="absolute inset-0" />
                                             {post.title}
+                                            <div
+                                                className="absolute inset-0 overflow-hidden opacity-10 blur-3xl"
+                                                aria-hidden="true"
+                                            >
+                                                <div
+                                                    className="h-full w-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] transform-gpu -skew-y-12"
+                                                />
+                                            </div>
                                         </a>
                                     </h3>
                                     <div className="relative mt-8 flex items-center gap-x-4">
