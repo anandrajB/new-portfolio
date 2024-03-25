@@ -4,7 +4,8 @@ import pythonimage from "../assets/python.png";
 import reactimage from "../assets/physics.png";
 import postgres from "../assets/postgre.png";
 import { CiShare1 } from "react-icons/ci";
-
+import django from "../assets/djs.png";
+import fast from "../assets/fasts.svg";
 const posts = [
     {
         id: 1,
@@ -18,7 +19,7 @@ const posts = [
         datetime: '2020-03-16',
         category: { title: 'Marketing', href: '#' },
         logos: [
-            pythonimage, reactimage, postgres
+            pythonimage, reactimage, postgres, django, fast
         ],
     },
     {
