@@ -3,7 +3,7 @@ import Sidenav from './Components/Sidenav'
 
 import React from 'react'
 import Work from './Components/Work'
-import Pr from './Components/Pr'
+import Project from './Components/Project'
 import Testimonals from './Components/Testimonals'
 import Footer from './Components/Footer'
 
@@ -13,7 +13,7 @@ const App = () => {
       <Sidenav />
       <Main />
       <Work />
-      <Pr />
+      <Project />
       <Testimonals />
       <Footer />
     </div>

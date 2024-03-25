@@ -57,15 +57,7 @@ const testimonials = [
                         'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
                 },
             },
-            {
-                body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-                author: {
-                    name: 'Leonard Krasner',
-                    handle: 'leonardkrasner',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-                },
-            },
+
         ],
     ],
 ]
@@ -79,7 +71,7 @@ import React from 'react'
 
 const Testimonals = () => {
     return (
-        <div className="relative isolate bg-slate-900 pb-32 pt-24 sm:pt-32">
+        <div id="testimonial" className="relative isolate bg-slate-900  py-10 sm:py-10">
             <div
                 className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
                 aria-hidden="true"
@@ -106,10 +98,7 @@ const Testimonals = () => {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-xl text-center">
-                    <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        We have worked with thousands of amazing people
-                    </p>
+                    <h2 className="text-3xl font-bold text-center tracking-tight text-indigo-500 sm:text-4xl">Testimonials</h2>
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                     <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
