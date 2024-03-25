@@ -1,15 +1,22 @@
-import { FaAws } from "react-icons/fa";
 
 import pythonimage from "../assets/python.png";
-import reactimage from "../assets/physics.png";
+import react from "../assets/react.svg";
 import postgres from "../assets/postgre.png";
 import { CiShare1 } from "react-icons/ci";
 import django from "../assets/djs.png";
-import fast from "../assets/fasts.svg";
+import fastapi from "../assets/fasts.svg";
+import mongo from "../assets/mongo.png"
+import elastic from "../assets/elas.png"
+import redis from "../assets/rr.png"
+import socket from "../assets/np.png"
+import neo from "../assets/cp.png"
+import celery from "../assets/cel.png"
+import aws from "../assets/as.png"
+
 const posts = [
     {
         id: 1,
-        title: 'Boost your conversion rate',
+        title: 'Krediq',
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -17,14 +24,14 @@ const posts = [
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: ["Fintech", "Backend", "Saas"],
         logos: [
-            pythonimage, reactimage, postgres, django, fast
+            pythonimage, django, postgres, elastic, redis, socket, celery, aws
         ],
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 2,
+        title: 'Kredfin',
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -32,14 +39,14 @@ const posts = [
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: ["Fintech", "Backend"],
         logos: [
-            pythonimage, reactimage, postgres
+            pythonimage, fastapi, postgres
         ],
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 3,
+        title: 'krediflo',
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -47,14 +54,14 @@ const posts = [
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: ["Package", "Backend", "Fintech"],
         logos: [
-            pythonimage, reactimage, postgres
+            pythonimage, django,
         ],
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 4,
+        title: 'Kredibot',
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -62,14 +69,14 @@ const posts = [
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: ["Fintech", "Frontend", "Saas"],
         logos: [
-            pythonimage, reactimage, postgres
+            pythonimage, react, socket
         ],
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 5,
+        title: 'kredichat',
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -77,14 +84,14 @@ const posts = [
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: ["Fintech", "Backend"],
         logos: [
-            pythonimage, reactimage, postgres
+            pythonimage, fastapi, mongo, socket
         ],
     },
     {
-        id: 1,
-        title: 'Boost your conversion rate',
+        id: 6,
+        title: 'AnalytiQ',
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -92,9 +99,24 @@ const posts = [
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
         date: 'Mar 16, 2020',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: ["Fintech", "Backend"],
         logos: [
-            pythonimage, reactimage, postgres
+            pythonimage, react, postgres, neo
+        ],
+    },
+    {
+        id: 7,
+        title: 'TF Masters',
+        href: '#',
+        description:
+            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        category: ["Edtech", "Backend"],
+        logos: [
+            pythonimage, django, postgres
         ],
     },
 
@@ -126,40 +148,44 @@ const Project = () => {
                             </div>
 
                             <div className="max-w-xl">
-                                <div className="mt-8 flex items-center gap-x-4 text-xs">
+                                <div className="mt-8 flex items-center gap-x-5 text-xs">
                                     <time dateTime={post.datetime} className="text-gray-500">
                                         {post.date}
                                     </time>
-                                    <a
-                                        href={post.category.href}
-                                        className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                                    >
-                                        {post.category.title}
-                                    </a>
+                                    <div className='flex flex-row justify-end  gap-x-3'>
+                                        {
+                                            post.category.map((title) => (
+                                                <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">{title}</span>
+                                            )
+
+                                            )
+                                        }
+
+
+                                    </div>
                                 </div>
 
                                 <div className="group relative">
-                                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                        <a >
+                                    <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a>
                                             <span className="absolute inset-0" />
                                             {post.title}
                                             <div
                                                 className="absolute inset-0 overflow-hidden opacity-10 blur-3xl"
                                                 aria-hidden="true"
                                             >
-                                                <div
-                                                    className="h-full w-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] transform-gpu -skew-y-12"
-                                                />
+                                                <div className="h-full w-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] transform-gpu -skew-y-12" />
                                             </div>
                                         </a>
                                     </h3>
                                     <div className="relative mt-8 flex items-center gap-x-4">
-
                                         {post.logos.map((logo, index) => (
-                                            <img src={logo} className='w-5 h-5' alt="Flaticon Icon" />
+                                            <img src={logo} className="w-5 h-5" alt="Flaticon Icon" />
                                         ))}
                                     </div>
-                                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                        {post.description}
+                                    </p>
                                 </div>
                                 <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm mt-3 px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                     Show project
@@ -171,7 +197,7 @@ const Project = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
