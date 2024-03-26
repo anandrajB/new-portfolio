@@ -12,7 +12,9 @@ import socket from "../assets/np.png"
 import neo from "../assets/cp.png"
 import celery from "../assets/cel.png"
 import aws from "../assets/as.png"
+import ploty from "../assets/ploty.png"
 import RevealOnScroll from './Reveal';
+import pandas from "../assets/pandas.png"
 const posts = [
     {
         id: 1,
@@ -22,7 +24,7 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Fintech", "Backend", "Saas"],
         logos: [
@@ -37,7 +39,7 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Fintech", "Backend"],
         logos: [
@@ -52,7 +54,7 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Package", "Backend", "Fintech"],
         logos: [
@@ -67,7 +69,7 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Fintech", "Frontend", "Saas"],
         logos: [
@@ -82,7 +84,7 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Fintech", "Backend"],
         logos: [
@@ -97,11 +99,11 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Fintech", "Backend"],
         logos: [
-            pythonimage, react, postgres, neo
+            pythonimage, ploty, neo, postgres, pandas
         ],
     },
     {
@@ -112,11 +114,11 @@ const posts = [
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
         imageUrl:
             'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
+
         datetime: '2020-03-16',
         category: ["Edtech", "Backend"],
         logos: [
-            pythonimage, django, postgres
+            pythonimage, django, postgres, socket
         ],
     },
 
@@ -150,13 +152,11 @@ const Project = () => {
 
                                 <div className="max-w-xl">
                                     <div className="mt-8 flex items-center gap-x-5 text-xs">
-                                        <time dateTime={post.datetime} className="text-gray-500">
-                                            {post.date}
-                                        </time>
+
                                         <div className='flex flex-row justify-end  gap-x-3'>
                                             {
                                                 post.category.map((title) => (
-                                                    <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">{title}</span>
+                                                    <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-blue-900 dark:text-blue-300">{title}</span>
                                                 )
 
                                                 )
