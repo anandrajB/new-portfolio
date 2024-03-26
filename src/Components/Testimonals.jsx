@@ -109,17 +109,12 @@ const Testimonals = () => {
                             <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
                                 <p>{`“${featuredTestimonial.body}”`}</p>
                             </blockquote>
-                            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                                <img
-                                    className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                                    src={featuredTestimonial.author.imageUrl}
-                                    alt=""
-                                />
-                                <div className="flex-auto">
+                            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4  px-6 py-3 sm:flex-nowrap">
+                                <img className="h-10 w-10 rounded-full bg-gray-50" src={featuredTestimonial.author.imageUrl} alt="" />
+                                <div>
                                     <div className="font-semibold">{featuredTestimonial.author.name}</div>
                                     <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                                 </div>
-                                <img className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
                             </figcaption>
                         </figure>
                         {testimonials.map((columnGroup, columnGroupIdx) => (
