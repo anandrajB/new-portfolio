@@ -11,11 +11,9 @@ const About = () => {
 
                 <div className='m-auto max-w-2xl lg:max-w-4xl'>
 
-                    <div className='flex flex-col justify-center  items-center sm:flex-col text-left sm:items-start py-1 '>
+                    <div className='flex flex-col justify-center  items-center sm:flex-col text-center leading-loose sm:items-start py-1 '>
 
-                        <p className='text-white semi-bold text-3xl'>I am a self motivated and passionate software engineer with a strong background in web development and a passion for building scalable and maintainable applications.</p>
-
-                        <p className='text-white text-lg py-5'>I have a Bachelor of Science in Computer Science from the University of Mumbai and a Master of Computer Applications from the Indian Institute of Technology, Kanpur. I am currently pursuing a Master of Business Administration from the University of Mumbai.</p>
+                        <p className='text-white semi-bold text-3xl'>I'm a developer .</p>
                     </div>
                 </div>
 
