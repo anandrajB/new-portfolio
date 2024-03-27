@@ -1,6 +1,9 @@
 import React from 'react'
 import RevealOnScroll from './Reveal'
 import anand from "../assets/anand.png";
+
+
+const Content = "I'm a developer"
 const About = () => {
     return (
         <div id="about" className="relative bg-slate-900 py-10 sm:py-10">
@@ -12,8 +15,9 @@ const About = () => {
                 <div className='m-auto max-w-2xl lg:max-w-4xl'>
 
                     <div className='flex flex-col justify-center  items-center sm:flex-col text-center leading-loose sm:items-start py-1 '>
-
-                        <p className='text-white semi-bold text-3xl'>I'm a developer .</p>
+                        <RevealOnScroll>
+                            <p className='text-white semi-bold text-3xl'>{Content}</p>
+                        </RevealOnScroll>
                     </div>
                 </div>
 
