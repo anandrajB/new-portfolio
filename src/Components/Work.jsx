@@ -5,18 +5,18 @@ import RevealOnScroll from './Reveal'
 const data = [
     {
         year: 'October 2022 -  present',
-        title: 'developer',
-        details: 'Use a library like Faker.js to generate random words and sentences to assemble into a lorem ipsum paragraph on the fly.'
+        title: 'SDE L3',
+        details: 'Engaged with multiple projects related to fintech and edtech. Worked on various backend and frontend projects, including a SaaS application for invoice discounting and a financial platform for loan management. Collaborated with cross-functional teams to deliver high-quality software solutions.'
     },
     {
-        year: 2021,
-        title: 'developer',
-        details: 'Use a library like Faker.js to generate random words and sentences to assemble into a lorem ipsum paragraph on the fly.'
+        year: 'November 2021 - October 2022',
+        title: 'Software Engineer',
+        details: 'Bootstrapped fintech project for loan management and invoice discounting. Communicated with stakeholders to understand their requirements and provided technical support. '
     },
     {
-        year: 2020,
-        title: 'developer',
-        details: 'Use a library like Faker.js to generate random words and sentences to assemble into a lorem ipsum paragraph on the fly.'
+        year: 'December 2020 - November 2021',
+        title: 'Junior Software Engineer',
+        details: 'Had an experience in developing and maintaining robus web scraping application for job description scrapping'
     }
 ]
 const Work = () => {
