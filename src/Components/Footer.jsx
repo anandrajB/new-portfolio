@@ -1,3 +1,8 @@
+import NotByAi from '../assets/notbyai.png'
+
+import RevealOnScroll from './Reveal'
+import React from 'react'
+
 const navigation = [
 
     {
@@ -49,10 +54,6 @@ const navigation = [
 
 ]
 
-import NotByAi from '../assets/notbyai.png'
-
-import RevealOnScroll from './Reveal'
-import React from 'react'
 
 const Footer = () => {
     return (
