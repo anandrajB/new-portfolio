@@ -20,6 +20,9 @@ import krediq from "../assets/krediq.png"
 import kredifin from "../assets/kredifin.png"
 import analytiq from "../assets/analytiq.png"
 import tfm from "../assets/tfm.png"
+import kredibot from "../assets/kredibot.png"
+import krediflo from "../assets/krediflo.png"
+import kredichat from "../assets/kredichat.png"
 const posts = [
     {
         id: 1,
@@ -52,10 +55,7 @@ const posts = [
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-
-
+        imageUrl: krediflo,
         category: ["Package", "Backend", "Fintech"],
         logos: [
             pythonimage, django,
@@ -66,14 +66,12 @@ const posts = [
         title: 'Kredibot',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-
+            'A easy plugable react chatbot for web apps in which the user can communicate with buyer , sellers , bank and customer support team and ensuring a seamless end to end experience.',
+        imageUrl: kredibot,
 
         category: ["Fintech", "Frontend", "Saas"],
         logos: [
-            pythonimage, react, socket
+            react, socket,
         ],
     },
     {
@@ -82,10 +80,7 @@ const posts = [
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-
-
+        imageUrl: kredichat,
         category: ["Fintech", "Backend"],
         logos: [
             pythonimage, fastapi, mongo, socket, pytorch
@@ -155,7 +150,7 @@ const Project = () => {
                                 </div>
 
                                 <div className="max-w-xl">
-                                    <div className="mt-8 flex items-center gap-x-5 text-xs">
+                                    <div className="mt-5 flex items-center gap-x-5 text-xs">
                                         <div className='flex flex-row justify-end gap-x-3'>
                                             {post.category.map((title) => (
                                                 <span key={title} className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-1.5 rounded-full dark:bg-blue-900 dark:text-blue-300">{title}</span>
@@ -172,12 +167,12 @@ const Project = () => {
                                                 </div>
                                             </a>
                                         </h3>
-                                        <div className="relative mt-8 flex items-center gap-x-4">
+                                        <div className="relative mt-5 flex items-center gap-x-4">
                                             {post.logos.map((logo, index) => (
                                                 <img key={index} src={logo} className="w-5 h-5" alt="Flaticon Icon" />
                                             ))}
                                         </div>
-                                        <p className={`${showDescriptions[index] ? '' : 'line-clamp-3'} mt-5leading-6 text-gray-600`}>
+                                        <p className={`${showDescriptions[index] ? '' : 'line-clamp-3'} mt-5 leading-6 text-gray-500`}>
                                             {post.description}
                                         </p>
 

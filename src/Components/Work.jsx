@@ -6,16 +6,19 @@ const data = [
     {
         year: 'October 2022 -  present',
         title: 'SDE L3',
+        Company: 'Venzo technologies pvt ltd , Chennai',
         details: 'Engaged with multiple projects related to fintech and edtech. Worked on various backend and frontend projects, including a SaaS application for invoice discounting and a financial platform for loan management. Collaborated with cross-functional teams to deliver high-quality software solutions.'
     },
     {
         year: 'November 2021 - October 2022',
         title: 'Software Engineer',
+        Company: 'Venzo technologies pvt ltd , Chennai',
         details: 'Bootstrapped fintech project for loan management and invoice discounting. Communicated with stakeholders to understand their requirements and provided technical support. '
     },
     {
         year: 'December 2020 - November 2021',
         title: 'Junior Software Engineer',
+        Company: 'Desss applying technologies pvt ltd , Chennai',
         details: 'Had an experience in developing and maintaining robus web scraping application for job description scrapping'
     }
 ]
@@ -44,6 +47,8 @@ const Work = () => {
                                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.year}</time>
 
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{item.title}</h3>
+
+                                    <p className='my-0.5 text-base font-normal text-gray-500'> {item.Company}</p>
                                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{item.details}</p>
 
                                 </li>

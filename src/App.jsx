@@ -18,6 +18,7 @@ const App = () => {
       <Project />
       <Testimonals />
       <Footer />
+
     </div>
   )
 }
