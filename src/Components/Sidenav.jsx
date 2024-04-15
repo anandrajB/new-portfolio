@@ -54,6 +54,8 @@ const Sidenav = () => {
                     style={{ fontSize: '2rem' }}
                 />
             )}
+
+
             {
                 nav ? (
                     <div className='fixed w-full h-screen bg-slate-300/70 flex flex-col justify-center items-center z-20'>
