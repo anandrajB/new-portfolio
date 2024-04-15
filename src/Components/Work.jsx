@@ -7,7 +7,7 @@ const data = [
         year: 'October 2022 -  present',
         title: 'SDE L3',
         Company: 'Venzo technologies pvt ltd , Chennai',
-        details: 'Engaged with multiple projects related to fintech and edtech. Worked on various backend and frontend projects, including a SaaS application for invoice discounting and a financial platform for loan management. Collaborated with cross-functional teams to deliver high-quality software solutions.'
+        details: 'Engaged with multiple projects related to fintech and edtech. Worked on various backend and frontend projects . Collaborated with cross-functional teams to deliver high-quality software solutions and provided technical support accross multiple projects.'
     },
     {
         year: 'November 2021 - October 2022',
@@ -19,7 +19,7 @@ const data = [
         year: 'December 2020 - November 2021',
         title: 'Junior Software Engineer',
         Company: 'Desss applying technologies pvt ltd , Chennai',
-        details: 'Had an experience in developing and maintaining robus web scraping application for job description scrapping'
+        details: 'Engaged and worked with building robust web scraping application and API for job description scrapping'
     }
 ]
 const Work = () => {
