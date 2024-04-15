@@ -3,8 +3,7 @@ import { AiOutlineMenu, AiOutlineHome } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { GoCommentDiscussion } from "react-icons/go";
 import { MdOutlineWorkOutline } from "react-icons/md";
-import { BsPerson } from "react-icons/bs";
-
+import { IoIosClose } from "react-icons/io";
 
 const baseItems = [
     {
@@ -35,9 +34,26 @@ const Sidenav = () => {
         Setnav(!nav);
     }
 
+
     return (
         <div>
-            <AiOutlineMenu onClick={handleNav} className='absolute top-4 right-4 z-[99] md:hidden fill-blue-500' />
+            {nav ? (
+
+                <IoIosClose
+                    onClick={handleNav}
+                    className='absolute top-4 right-4 z-[99] md:hidden fill-blue-500'
+                    style={{
+                        fontSize: '2rem'
+                    }}
+                />
+
+            ) : (
+                <AiOutlineMenu
+                    onClick={handleNav}
+                    className='absolute top-4 right-4 z-[99] md:hidden fill-blue-500'
+                    style={{ fontSize: '2rem' }}
+                />
+            )}
             {
                 nav ? (
                     <div className='fixed w-full h-screen bg-slate-300/70 flex flex-col justify-center items-center z-20'>
