@@ -42,7 +42,7 @@ const posts = [
         title: 'Kredfin',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            'A cutting-edge API solution designed to streamline financial management, providing a centralized solution for businesses to manage their finances and  repayable invoices and to maintain a comprehensive ledger for every accounting entry',
         imageUrl: kredifin,
         category: ["Fintech", "Backend"],
         logos: [
@@ -54,7 +54,7 @@ const posts = [
         title: 'krediflo',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            'Python SDK tailored for Django applications, enabling seamless handling of Finite State Machine (FSM) state transitions. This SDK specializes in improved action-based transitions, multi-level signature approvals, and provides robust solutions for managing states between different role-players within the Django framework. Easy and seamless integration with other Django applications.',
         imageUrl: krediflo,
         category: ["Package", "Backend", "Fintech"],
         logos: [
@@ -66,7 +66,7 @@ const posts = [
         title: 'Kredibot',
         href: '#',
         description:
-            'A easy plugable react chatbot for web apps in which the user can communicate with buyer , sellers , bank and customer support team and ensuring a seamless end to end experience.',
+            'A Node SDK tailored for react applications, enabling chatbot interface with banks and customers within the krediq ecosystem and enabling a end to end communication within parties . ',
         imageUrl: kredibot,
 
         category: ["Fintech", "Frontend", "Saas"],
@@ -79,7 +79,7 @@ const posts = [
         title: 'kredichat',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            'An dynamic bidirectional communication platform integrated within the Krediq ecosystem that seamlessly connects customers, sellers, and the bank. This intelligent chat solution transforms financial interactions into engaging conversations and ensuring a personalized and efficient experience.',
         imageUrl: kredichat,
         category: ["Fintech", "Backend"],
         logos: [
@@ -91,7 +91,7 @@ const posts = [
         title: 'AnalytiQ',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            'A Dashboard for banks acts as a back office to view their customers profiling , ageing invoices and credit risk analysis. Enhancing with  a comprehensive overview of the customer’s financial performance and helps in making informed decisions.',
         imageUrl: analytiq,
         category: ["Fintech", "Backend"],
         logos: [
@@ -103,7 +103,7 @@ const posts = [
         title: 'TF Masters',
         href: '#',
         description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+            'An online ed-tech platform to boost your trade finance knowledge and marketplace for trade finance community members .',
         imageUrl: tfm,
         category: ["Edtech", "Backend"],
         logos: [
