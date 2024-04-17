@@ -4,13 +4,19 @@ import { GrProjects } from "react-icons/gr";
 import { GoCommentDiscussion } from "react-icons/go";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
-
+import { TbBulb } from "react-icons/tb";
 const baseItems = [
     {
         "name": "Home",
         "href": "#main",
         "icon": <AiOutlineHome size={20} />
     },
+    {
+        "name": "Skills",
+        "href": "#skills",
+        "icon": <TbBulb size={20} />
+    },
+
     {
         "name": "Work",
         "href": "#work",
