@@ -4,7 +4,7 @@ import aws from "../assets/as.png";
 import react from "../assets/react.svg";
 import React from 'react'
 import fastapi from "../assets/fasts.svg";
-
+import RevealOnScroll from './Reveal'
 const skills_logo = [python, django, aws, react, fastapi, django];
 
 const Skills = () => {
@@ -13,20 +13,22 @@ const Skills = () => {
             <div className="mx-auto max-w-2xl mb-10 text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-indigo-500 sm:text-4xl">Skills</h2>
             </div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-3 gap-y-12 sm:max-w-xl sm:grid-cols-10 sm:gap-x-3 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-6">
-                    {
-                        skills_logo.map((logo, index) => (
-                            <img
-                                key={index}
-                                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                                src={logo}
-                                alt="Skill Logo"
-                            />
-                        ))
-                    }
+            <RevealOnScroll>
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-3 gap-y-12 sm:max-w-xl sm:grid-cols-10 sm:gap-x-3 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-6">
+                        {
+                            skills_logo.map((logo, index) => (
+                                <img
+                                    key={index}
+                                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                                    src={logo}
+                                    alt="Skill Logo"
+                                />
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+            </RevealOnScroll>
         </div>
     );
 };
