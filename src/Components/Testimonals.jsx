@@ -109,9 +109,9 @@ const Testimonals = () => {
                             <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
                                 <p>{`“${featuredTestimonial.body}”`}</p>
                             </blockquote>
-                            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4  px-6 py-3 sm:flex-nowrap">
-                                <img className="h-10 w-10 rounded-full bg-gray-50" src={featuredTestimonial.author.imageUrl} alt="" />
-                                <div>
+                            <figcaption className="flex flex-wrap md:ml-6 sm:ml-2 items-center px-6 py-3 sm:flex-nowrap">
+
+                                <div >
                                     <div className="font-semibold">{featuredTestimonial.author.name}</div>
                                     <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                                 </div>
@@ -139,7 +139,6 @@ const Testimonals = () => {
                                                     <p>{`“${testimonial.body}”`}</p>
                                                 </blockquote>
                                                 <figcaption className="mt-6 flex items-center gap-x-4">
-                                                    <img className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
                                                     <div>
                                                         <div className="font-semibold">{testimonial.author.name}</div>
                                                         <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
