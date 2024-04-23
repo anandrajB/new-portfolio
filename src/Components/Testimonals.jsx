@@ -3,24 +3,19 @@ const featuredTestimonial = {
     author: {
         name: 'Brenna Goyette',
         handle: 'brennagoyette',
-        imageUrl:
-            'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-        logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
     },
 }
 const testimonials = [
     [
         [
             {
-                body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+                body: 'It is great to work with anand ',
                 author: {
-                    name: 'Leslie Alexander',
-                    handle: 'lesliealexander',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                    name: 'Mohammed Sheik',
+                    handle: 'msheikali',
                 },
             },
-            // More testimonials...
+
         ],
         [
             {
@@ -28,11 +23,9 @@ const testimonials = [
                 author: {
                     name: 'Lindsay Walton',
                     handle: 'lindsaywalton',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
                 },
             },
-            // More testimonials...
+
         ],
     ],
     [
@@ -42,8 +35,6 @@ const testimonials = [
                 author: {
                     name: 'Tom Cook',
                     handle: 'tomcook',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
                 },
             },
         ],
@@ -53,8 +44,6 @@ const testimonials = [
                 author: {
                     name: 'Leonard Krasner',
                     handle: 'leonardkrasner',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
                 },
             },
 
