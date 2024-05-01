@@ -62,7 +62,7 @@ import React from 'react'
 
 const Testimonals = () => {
     return (
-        <div id="testimonial" className="relative isolate bg-slate-900  py-10 sm:py-10">
+        <div id="testimonial" className="relative isolate bg-slate-900  py-5 sm:py-10">
             <div
                 className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
                 aria-hidden="true"
