@@ -37,6 +37,7 @@ const posts = [
         logos: [
             pythonimage, django, postgres, elastic, redis, socket, celery, aws
         ],
+        link: 'https://krediq.com/'
     },
     {
         id: 2,
@@ -110,6 +111,7 @@ const posts = [
         logos: [
             pythonimage, django, postgres, socket
         ],
+        link: 'https://tfmbackend-gqrrv.ondigitalocean.app/'
     },
     {
         id: 8,
@@ -122,6 +124,7 @@ const posts = [
         logos: [
             pythonimage, django, react, postgres
         ],
+        link: 'https://flexitable.web.app/'
     },
 
 ]
@@ -199,7 +202,7 @@ const Project = () => {
                                         >
                                             {showDescriptions[index] ? 'Read less' : 'Read more'}
                                         </a>
-                                        <a href='https://www.krediq.com'>
+                                        <a href={post.link} target='_blank'>
                                             <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm mt-3 px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                                 Show project
 
