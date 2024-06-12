@@ -23,6 +23,7 @@ import tfm from "../assets/tfm2.png"
 import kredibot from "../assets/kredibot.png"
 import krediflo from "../assets/krediflo.png"
 import kredichat from "../assets/kredichat.png"
+import flexitable from "../assets/flexitable.png"
 const posts = [
     {
         id: 1,
@@ -110,6 +111,18 @@ const posts = [
             pythonimage, django, postgres, socket
         ],
     },
+    {
+        id: 8,
+        title: 'FlexiTable',
+        href: '#',
+        description:
+            'An no code database creation application build to minimise the application CRUD which works as Database as a services to applications (DBaas) and minimalistic version of baserow and airtable',
+        imageUrl: flexitable,
+        category: ["DBaas", "Fullstack"],
+        logos: [
+            pythonimage, django, react, postgres
+        ],
+    },
 
 ]
 
@@ -143,6 +156,8 @@ const Project = () => {
                                 <div className="relative w-full">
                                     <img
                                         src={post.imageUrl}
+                                        width={55}
+                                        height={50}
                                         alt=""
                                         className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                                     />
