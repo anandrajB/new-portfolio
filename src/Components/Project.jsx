@@ -8,6 +8,7 @@ import fastapi from "../assets/fasts.svg";
 import mongo from "../assets/mongo.png"
 import elastic from "../assets/elas.png"
 import redis from "../assets/rr.png"
+import chainlit from '../assets/chainlit.png';
 import socket from "../assets/np.png"
 import neo from "../assets/cp.png"
 import celery from "../assets/cel.png"
@@ -125,6 +126,19 @@ const posts = [
             pythonimage, django, react, postgres
         ],
         link: 'https://flexitable.web.app/'
+    },
+    {
+        id: 8,
+        title: 'FlexiBot',
+        href: '#',
+        description:
+            'A simple AI assistant powered with chainlit based chat interface for dynamic table creation',
+        imageUrl: flexitable,
+        category: ["Chainlit", "Backend"],
+        logos: [
+            pythonimage, fastapi, chainlit
+        ],
+        link: 'https://flexibot-mkut.onrender.com/'
     },
 
 ]
