@@ -25,6 +25,7 @@ import kredibot from "../assets/kredibot.png"
 import krediflo from "../assets/krediflo.png"
 import kredichat from "../assets/kredichat.png"
 import flexitable from "../assets/flexitable.png"
+import flexibot from '../assets/flexibot.png'
 const posts = [
     {
         id: 1,
@@ -132,13 +133,13 @@ const posts = [
         title: 'FlexiBot',
         href: '#',
         description:
-            'A simple AI assistant powered with chainlit based chat interface for dynamic table creation',
-        imageUrl: flexitable,
+            'An intuitive AI-powered assistant featuring in Chainlit specialized in dynamic table generation and streamlines data creation  by enabling users to create and manipulate tables through natural language interactions, enhancing productivity in data management tasks and in complex business scenarios.',
+        imageUrl: flexibot,
         category: ["Chainlit", "Backend"],
         logos: [
             pythonimage, fastapi, chainlit
         ],
-        link: 'https://flexibot-mkut.onrender.com/'
+        link: 'https://flexibot-assistant-599wa.ondigitalocean.app/bot/?userId=3&Token=test'
     },
 
 ]

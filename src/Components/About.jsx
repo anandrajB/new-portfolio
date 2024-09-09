@@ -3,7 +3,7 @@ import RevealOnScroll from './Reveal'
 import anand from "../assets/anand.png";
 
 
-const Content = "I'm a Experienced backend developer specializing in crafting robust and scalable systems. Proficient in Python, Django, FastAPI, AWS  and React , I am dedicated to delivering top-tier software solutions. With over 3 years of industry experience in working with fintech platform , I thrive on overcoming complex technical obstacles and am committed to excellence in every project."
+const Content = "Experienced backend developer with 3+ years in fintech, specializing in Python, Django, FastAPI, AWS, and React. Skilled in crafting scalable, secure systems and solving complex technical challenges. Consistently delivering high-performance solutions for financial platforms, with a focus on continuous learning and innovation."
 const About = () => {
     return (
         <div id="about" className="relative bg-slate-900 py-10 sm:py-10">

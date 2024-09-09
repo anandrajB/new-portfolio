@@ -58,27 +58,27 @@ const navigation = [
 const Footer = () => {
     return (
         <footer id="footer" className="bg-slate-900 h-40 w-full">
-            <RevealOnScroll>
             <div className="mx-auto max-w-7xl px-6 pt-20 md:flex md:items-center md:justify-center lg:px-8">
                 <div className="flex justify-center space-x-6 md:order-2">
                     {navigation.map((item) => (
                         <a
                             key={item.name}
-                            href="#"
-                            onClick={() => window.open(item.href)}
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-gray-400 cursor-pointer hover:text-gray-500"
                         >
                             <span className="sr-only">{item.name}</span>
-                            <item.icon className="h-6 w-6" aria-hidden="true" />
+                            {React.createElement(item.icon, {
+                                className: "h-6 w-6",
+                                "aria-hidden": "true"
+                            })}
                         </a>
                     ))}
-
                 </div>
-
-
             </div>
-        </RevealOnScroll>
-        </footer >
+        </footer>
+
     )
 }
 
