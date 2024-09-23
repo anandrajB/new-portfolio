@@ -1,6 +1,5 @@
-import React from 'react'
-import RevealOnScroll from './Reveal'
-import anand from "../assets/anand.png";
+import React from 'react';
+import RevealOnScroll from './Reveal';
 
 
 const Content = "Experienced backend developer with 3+ years in fintech, specializing in Python, Django, FastAPI, AWS, and React. Skilled in crafting scalable, secure systems and solving complex technical challenges. Consistently delivering high-performance solutions for financial platforms, with a focus on continuous learning and innovation."

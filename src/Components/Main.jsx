@@ -1,8 +1,6 @@
 import React from 'react';
-import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import header from "../assets/header.jpeg";
 import { CiShare1 } from "react-icons/ci";
-import Footer from './Footer';
 
 
 const navigation = [
