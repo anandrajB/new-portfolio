@@ -55,7 +55,7 @@ const navigation = [
 
 const Main = () => {
     return (
-        <div id="main" className='w-full h-screen bg-no-repeat bg-cover'
+        <div id="main" className='w-full overflow-y-auto  h-screen bg-no-repeat bg-cover'
             style={{
                 backgroundImage: `url(${header})`,
                 backgroundPosition: '20% 80%',
@@ -68,7 +68,7 @@ const Main = () => {
                 aria-hidden="true"
             >
                 <div
-                    className="h-full w-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] transform-gpu -skew-y-12"
+                    className="h-full  w-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] transform-gpu -skew-y-12"
                 />
             </div>
 
