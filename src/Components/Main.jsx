@@ -1,5 +1,5 @@
 import React from 'react';
-import header from "../assets/header.jpeg";
+import header from "../assets/header2.jpeg";
 import { CiShare1 } from "react-icons/ci";
 
 
@@ -55,7 +55,14 @@ const navigation = [
 
 const Main = () => {
     return (
-        <div id="main" className='w-full h-screen bg-no-repeat bg-cover' style={{ backgroundImage: `url(${header})` }}>
+        <div id="main" className='w-full h-screen bg-no-repeat bg-cover'
+            style={{
+                backgroundImage: `url(${header})`,
+                backgroundPosition: '20% 80%',
+                animation: 'moveUp 2s forwards'
+            }}
+        >
+
             <div
                 className="absolute inset-0 overflow-hidden opacity-10 blur-3xl"
                 aria-hidden="true"
@@ -64,30 +71,45 @@ const Main = () => {
                     className="h-full w-full bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] transform-gpu -skew-y-12"
                 />
             </div>
-            
-            
+
+            <div
+                className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+                aria-hidden="true"
+            >
+                <div
+                    className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+                    style={{
+                        clipPath:
+                            'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                    }}
+                />
+            </div>
+
             <div className='w-full h-screen absolute top-0 left-0 bg-gray/60'>
+
                 <div className='absolute max-w-[700px] m-auto bottom-10  left-10 flex flex-col sm:left-40 justify-center lg:items-start items-center'>
                     <h1 className='sm:text-7xl font-semibold text-5xl  text-white'>Anand Raj</h1>
                     <h1 className='font-sans bg-slate-950 sm:text-4xl  text-blue-500 font-col text-1xl font-normal p-2 mt-5'>Software Engineer</h1>
+
                     <div className="mt-5 flex items-center gap-x-4">
-                        <a href= "#about">
-                        <button type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                        Explore</button>
+                        <a href="#about">
+                            <button type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                                Explore</button>
                         </a>
-                        <a href = 'https://www.canva.com/design/DAGRYTYOVBA/5JXsCa6KD4yinqfW8_GSpw/view?utm_content=DAGRYTYOVBA&utm_campaign=designshare&utm_medium=link&utm_source=editor' download>
-                        <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
-                        Download Resume
-                        </button>
+                        <a href='https://www.canva.com/design/DAGRYTYOVBA/5JXsCa6KD4yinqfW8_GSpw/view?utm_content=DAGRYTYOVBA&utm_campaign=designshare&utm_medium=link&utm_source=editor' download>
+                            <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+                                Download Resume
+                            </button>
                         </a>
-                        
-                        
+
+
                         <a href='https://www.linkedin.com/in/anandraj98/' target='_blank'>
                             <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                                 Hire Me <span className="inline-block ml-1"><CiShare1 size={14} /></span>
                             </button>
                         </a>
-                        
+
+
                     </div>
                     <div className="flex justify-center mt-5 space-x-6 md:order-2">
                         {navigation.map((item) => (
@@ -96,7 +118,7 @@ const Main = () => {
                                 href={item.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-teal-300 cursor-pointer hover:text-gray-500"
+                                className="text-teal-100 cursor-pointer hover:text-black"
                             >
                                 <span className="sr-only">{item.name}</span>
                                 {React.createElement(item.icon, {
