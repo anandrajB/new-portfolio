@@ -13,7 +13,7 @@ const testimonials = [
         ],
         [
             {
-                body: 'Rapidly fast, Crystal clear and Independent.Good to have a resource like anand in any team.',
+                body: 'Rapidly fast, Crystal clear and Independent. Good to have a resource like anand in any team.',
                 author: {
                     name: 'Jenith kumar',
                     handle: 'jenithkumar',
@@ -25,10 +25,10 @@ const testimonials = [
     [
         [
             {
-                body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+                body: 'Your work performance has been exemplary, consistently demonstrating professionalism and offering invaluable suggestions and willingness to improvise as well as sets you apart is your ability to tackle complex tasks with ease, delivering great results without unnecessary fanfare',
                 author: {
-                    name: 'Tom Cook',
-                    handle: 'tomcook',
+                    name: 'Krithika Sriram',
+                    handle: 'krithika',
                 },
             },
         ],
@@ -64,7 +64,7 @@ const Testimonals = () => {
                     <h2 className="text-3xl font-bold text-center tracking-tight text-indigo-500 sm:text-4xl">Testimonials</h2>
                 </div>
                 <RevealOnScroll>
-                    <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+                    <div className="mx-auto mt-16 grid max-w-3xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
 
 
                         {testimonials.map((columnGroup, columnGroupIdx) => (
