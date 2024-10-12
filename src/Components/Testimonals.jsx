@@ -25,7 +25,7 @@ const testimonials = [
     [
         [
             {
-                body: 'Your work performance has been exemplary, consistently demonstrating professionalism and offering invaluable suggestions and willingness to improvise as well as sets you apart is your ability to tackle complex tasks with ease, delivering great results without unnecessary fanfare',
+                body: 'Your work performance has been exemplary, consistently demonstrating professionalism and offering valuable suggestions and willingness to improvise as well as sets you apart is your ability to tackle complex tasks with ease, delivering great results without unnecessary fanfare',
                 author: {
                     name: 'Krithika Sriram',
                     handle: 'krithika',
