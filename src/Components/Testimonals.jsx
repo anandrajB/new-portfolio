@@ -34,10 +34,10 @@ const testimonials = [
         ],
         [
             {
-                body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+                body: 'Nevertheless, you are the best resource in our team with strong technical knowledge and skills. Congratulations and Thank you!',
                 author: {
-                    name: 'Leonard Krasner',
-                    handle: 'leonardkrasner',
+                    name: 'SivagamiSundari',
+                    handle: 'Sivagami',
                 },
             },
 
