@@ -31,7 +31,10 @@ const About = () => {
 
                         <RevealOnScroll>
 
-                            <p className='text-white semi-bold text-3xl leading-normal'>{Content}</p>
+                            <p className='text-3xl not-italic sm:text-3xl text-left sm:text-center text-white sm:text-white semi-bold leading-normal'>
+                                {Content}
+                            </p>
+
                         </RevealOnScroll>
                     </div>
                 </div>

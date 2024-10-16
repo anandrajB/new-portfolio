@@ -58,7 +58,7 @@ const Main = () => {
 
 
     return (
-        <div id="main" className='w-full overflow-y-auto  h-screen bg-no-repeat bg-cover'
+        <div id="main" className='w-full flex items-center overflow-y-auto  h-screen bg-no-repeat bg-cover'
             style={{
                 backgroundImage: `url(${header})`,
                 backgroundPosition: '80% 80%',
@@ -91,9 +91,9 @@ const Main = () => {
 
             <div className='w-full h-screen absolute top-10 left-0 bg-gray/60 sm:top-0'>
 
-                <div className='absolute max-w-[700px]  m-auto bottom-12 left-2 flex flex-col sm:left-40 justify-start lg:items-start  items-center'>
+                <div className='justify-center absolute max-w-[700px]  m-auto bottom-12 left-2 flex flex-col sm:left-40 lg:items-start  items-center'>
                     <h1 className='sm:text-7xl font-semibold text-6xl  text-white'>Anand Raj</h1>
-                    <h1 className='font-sans  rounded-lg  mt-15 text-xl  sm:text-4xl bg-slate-950 text-blue-500 font-col mt-5 text-1xl font-normal p-2 '
+                    <h1 className='font-sans rounded-lg  mt-15 text-2xl  sm:text-4xl bg-slate-950 text-blue-500 font-col mt-5 text-1xl font-normal p-2 '
                     >Software Engineer</h1>
 
                     <div className="mt-5 flex items-center gap-x-4 ">
