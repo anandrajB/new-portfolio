@@ -4,7 +4,13 @@ import RevealOnScroll from './Reveal'
 
 const data = [
     {
-        year: 'October 2022 -  present',
+        year : 'Jan 2025 - present',
+        title : "Senior Software Engineer",
+        Company : 'Illuminei Industries Pvt Ltd',
+        details : 'Bootstraped projects for ev charging setup proposal tool and crafted the entire infrastructure and management '
+    },
+    {
+        year: 'October 2022 -  Jan 2025',
         title: 'SDE L3',
         Company: 'Venzo technologies pvt ltd , Chennai',
         details: 'Engaged with multiple projects in fintech and edtech sectors, proficient in both backend and frontend development. Delivered success in collaborating with cross-functional teams to deliver high-quality software solutions across multiple projects. Skilled in providing comprehensive technical support and excelling in rapid prototyping, proof-of-concept, and MVP development. Committed to delivering great excellence throughout the SDLC .'
