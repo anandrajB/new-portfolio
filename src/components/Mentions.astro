@@ -3,149 +3,182 @@ import Icon from './Icon.astro';
 import Grid from './Grid.astro';
 
 const testimonials = [
-    {
-        name: 'Anand Raj',
-        text: 'Rapidly fast, Crystal clear and Independent. Good to have a resource like anand in any team.',
-    },
-    {
-        name: 'Jane Doe',
-        text: 'Your work performance has been exemplary, consistently demonstrating professionalism and offering valuable suggestions and willingness to improvise as well as sets you apart is your ability to tackle complex tasks with ease, delivering great results without unnecessary fanfare.',
-    },
-    {
-        name: 'Anand Raj',
-        text: 'Nevertheless, you are the best resource in our team with strong technical knowledge and skills.',
-    },
-    {
-        name: 'Jane Doe',
-        text: 'Anand is an exceptional developer who consistently delivers high-quality work on time. He is a great communicator and always willing to collaborate with the team.',
-    },
+  {
+    name: 'jenithkumar',
+    text: 'Rapidly fast, Crystal clear and Independent. Good to have a resource like anand in any team.',
+  },
+  {
+    name: 'Krithika Sriram',
+    text: 'Your work performance has been exemplary, consistently demonstrating professionalism and offering valuable suggestions and willingness to improvise as well as sets you apart is your ability to tackle complex tasks with ease, delivering great results without unnecessary fanfare.',
+  },
+  {
+    name: 'SivagamiSundari',
+    text: 'Nevertheless, you are the best resource in our team with strong technical knowledge and skills.',
+  },
+  {
+    name: 'Rahul Mathew',
+    text: 'Anand is an exceptional developer who consistently delivers high-quality work on time. He is a great communicator and always willing to collaborate with the team.',
+  },
 ];
 ---
 
-
 <section class="section with-background bg-variant laoded">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Testimonials</h3>
-				
-				</header>
+  <header class="section-header stack gap-2 lg:gap-4">
+    <h3>Testimonials</h3>
+  </header>
 
-				<div class="gallery">
+  <div class="gallery">
     <ul class="testimonial-masonry-scatter">
-        {
+      {
         testimonials.map((testimonial) => (
-            <li class="mention-card">
-                <p class="testimonial-text">"{testimonial.text}"</p>
-                <p class="testimonial-author">@ {testimonial.name}</p>
-            </li>
-        ))}
+          <li class="mention-card">
+            <p class="testimonial-text">"{testimonial.text}"</p>
+            <p class="testimonial-author">@ {testimonial.name}</p>
+          </li>
+        ))
+      }
     </ul>
-</div>
-			</section>
-
-
+  </div>
+</section>
 
 <style>
-	/* ====================================================== */
-    /* Scattered Masonry Layout */
-    /* ====================================================== */
-    /* ====================================================== */
-    /* Stable Layout with Organic Floating Animations */
-    /* ====================================================== */
+  /* ====================================================== */
+  /* Scattered Masonry Layout */
+  /* ====================================================== */
+  /* ====================================================== */
+  /* Stable Layout with Organic Floating Animations */
+  /* ====================================================== */
 
+  .testimonial-masonry-scatter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-count: 1;
+    column-gap: 1.5rem;
+  }
+
+  .mention-card {
+    display: inline-block; /* Prevents card from splitting across columns */
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: left;
+
+    border: 1px solid var(--gray-800);
+    border-radius: 1.5rem;
+    color: var(--gray-300);
+    background: var(--gradient-subtle);
+    box-shadow: var(--shadow-sm);
+
+    /* Smooth transition when hovering or leaving hover state */
+    transition:
+      transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.4s ease,
+      border-color 0.3s ease;
+  }
+
+
+  .gallery {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ------------------------------------------------------ */
+  /* The Floating Keyframes (Varying paths for organic look) */
+  /* ------------------------------------------------------ */
+
+  /* Animation A: Smooth vertical drifting */
+  @keyframes floatTypeA {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Animation B: Vertical drift combined with a very subtle sway */
+  @keyframes floatTypeB {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    50% {
+      transform: translateY(-7px) translateX(3px);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+  }
+
+  /* Animation C: Deeper bobbing effect */
+  @keyframes floatTypeC {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @media (min-width: 640px) {
     .testimonial-masonry-scatter {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        column-count: 1;
-        column-gap: 1.5rem;
+      column-count: 1;
+      column-gap: 1rem;
+      padding: 0.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .testimonial-masonry-scatter {
+      column-count: 1;
+      column-gap: 2rem;
+      padding: 0.75rem;
+    }
+  }
+  @media {
+    /* Card 1: Standard float, medium speed */
+    .mention-card:nth-child(1) {
+      animation: floatTypeA 6s ease-in-out infinite;
     }
 
-    .mention-card {
-        display: inline-block; /* Prevents card from splitting across columns */
-        width: 100%;
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        text-align: left;
-        
-        border: 1px solid var(--gray-800);
-        border-radius: 1.5rem;
-        color: var(--gray-300);
-        background: var(--gradient-subtle);
-        box-shadow: var(--shadow-sm);
-        
-        /* Smooth transition when hovering or leaving hover state */
-        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
-                    box-shadow 0.4s ease, 
-                    border-color 0.3s ease;
+    /* Card 2: Swaying float, slower speed, offset start */
+    .mention-card:nth-child(2) {
+      margin-top: 2rem; /* Creates structural scatter layout naturally */
+      animation: floatTypeB 8s ease-in-out infinite;
+      animation-delay: 1s;
     }
 
-    /* ------------------------------------------------------ */
-    /* The Floating Keyframes (Varying paths for organic look) */
-    /* ------------------------------------------------------ */
-    
-    /* Animation A: Smooth vertical drifting */
-    @keyframes floatTypeA {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
+    /* Card 3: Deep bobbing float, faster speed, offset start */
+    .mention-card:nth-child(3) {
+      animation: floatTypeC 5s ease-in-out infinite;
+      animation-delay: 0.5s;
     }
 
-    /* Animation B: Vertical drift combined with a very subtle sway */
-    @keyframes floatTypeB {
-        0% { transform: translateY(0px) translateX(0px); }
-        50% { transform: translateY(-7px) translateX(3px); }
-        100% { transform: translateY(0px) translateX(0px); }
+    /* Card 4: Standard float, slowest speed, offset start */
+    .mention-card:nth-child(4) {
+      margin-top: -1rem; /* Closes the gap naturally */
+      animation: floatTypeA 9s ease-in-out infinite;
+      animation-delay: 1.5s;
     }
 
-    /* Animation C: Deeper bobbing effect */
-    @keyframes floatTypeC {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-12px); }
-        100% { transform: translateY(0px); }
+    /* Active Hover Interaction */
+    .mention-card:hover {
+      /* scale up slightly, ignore the floating animation entirely on hover */
+      transform: scale(1.04) translateY(-5px) !important;
+      box-shadow:
+        var(--shadow-lg),
+        0 20px 40px rgba(0, 0, 0, 0.25);
+      border-color: var(--gray-600);
+      z-index: 10;
+
+      /* Pauses the floating loop while the user is actively reading it */
+      animation-play-state: paused;
     }
-
-    @media (min-width: 50em) {
-        .testimonial-masonry-scatter {
-            column-count: 2;
-            column-gap: 2.5rem;
-            padding: 1rem;
-        }
-
-        /* Card 1: Standard float, medium speed */
-        .mention-card:nth-child(1) {
-            animation: floatTypeA 6s ease-in-out infinite;
-        }
-
-        /* Card 2: Swaying float, slower speed, offset start */
-        .mention-card:nth-child(2) {
-            margin-top: 2rem; /* Creates structural scatter layout naturally */
-            animation: floatTypeB 8s ease-in-out infinite;
-            animation-delay: 1s;
-        }
-
-        /* Card 3: Deep bobbing float, faster speed, offset start */
-        .mention-card:nth-child(3) {
-            animation: floatTypeC 5s ease-in-out infinite;
-            animation-delay: 0.5s;
-        }
-
-        /* Card 4: Standard float, slowest speed, offset start */
-        .mention-card:nth-child(4) {
-            margin-top: -1rem; /* Closes the gap naturally */
-            animation: floatTypeA 9s ease-in-out infinite;
-            animation-delay: 1.5s;
-        }
-
-        /* Active Hover Interaction */
-        .mention-card:hover {
-            /* scale up slightly, ignore the floating animation entirely on hover */
-            transform: scale(1.04) translateY(-5px) !important; 
-            box-shadow: var(--shadow-lg), 0 20px 40px rgba(0, 0, 0, 0.25);
-            border-color: var(--gray-600);
-            z-index: 10;
-            
-            /* Pauses the floating loop while the user is actively reading it */
-            animation-play-state: paused; 
-        }
-    }
+  }
 </style>

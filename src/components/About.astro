@@ -1,0 +1,84 @@
+---
+
+---
+
+<section class="box about me">
+    <div class="content">
+    <p>
+      Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in
+      iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus
+      in ornare.
+    </p>
+    <p>
+      Experienced backend developer with 3+ years in fintech, specializing in Python, Django, FastAPI, AWS, and React.
+      Skilled in crafting scalable, secure systems and solving complex technical challenges. Consistently delivering
+      high-performance solutions for financial platforms, with a focus on continuous learning and innovation.
+    </p>
+    <p>
+      Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus
+      accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In
+      massa tempor nec feugiat nisl pretium fusce.
+    </p>
+  </div>
+</section>
+
+
+
+<style
+
+  .content {
+    grid-column: 1 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  .with-background {
+    position: relative;
+  }
+
+  .with-background::before {
+    --hero-bg: var(--bg-image-subtle-2);
+
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    left: 50%;
+    width: 100vw;
+    aspect-ratio: calc(2.25 / var(--bg-scale));
+    top: 0;
+    transform: translateY(-75%) translateX(-50%);
+    background:
+      url('../assets/backgrounds/noise.png') top center/220px repeat,
+      var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+      var(--gray-999);
+    background-blend-mode: overlay, normal, normal, normal;
+    mix-blend-mode: var(--bg-blend-mode);
+    z-index: -1;
+  }
+
+  .with-background.bg-variant::before {
+    --hero-bg: var(--bg-image-subtle-1);
+  }
+
+  .section-header {
+    grid-column: 1 / 4;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 50em) {
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
