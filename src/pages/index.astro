@@ -30,8 +30,8 @@ const projects = (await getCollection('work'))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hello, i'm Anand Raj"
-          tagline="I am a Full Stack Developer based in Chennai , India."
+          title="Hello, I'm Anand Raj"
+          tagline="Full Stack AI Developer based in Chennai , India."
           align="start"
         >
           <!-- i can put my skill here later on  -->
@@ -66,7 +66,7 @@ const projects = (await getCollection('work'))
         />
       </header>
 
-      <Skills />
+      
 
       <section class="section with-background bg-variant">
         <header class="section-header stack gap-2 lg:gap-4">
@@ -75,6 +75,9 @@ const projects = (await getCollection('work'))
         <About />
 
       </section>
+
+
+	  <Skills />
 	  
     </div>
 
@@ -201,8 +204,8 @@ const projects = (await getCollection('work'))
   }
 
   .section-header {
-    justify-self: center;
-    text-align: center;
+    justify-self: left;
+    text-align: left;
     max-width: 50ch;
     font-size: var(--text-md);
     color: var(--gray-300);
@@ -243,7 +246,20 @@ const projects = (await getCollection('work'))
 
     .cta {
       grid-area: cta;
+	  margin-top : 1.5rem;
     }
+  }
+
+  /*  */
+  @media (min-width : 20em) {
+	.section.with-cta {
+	  grid-template-areas: 'header header cta' 'gallery gallery gallery';
+	}
+
+	.cta {
+		grid-area: cta;
+		margin-top: 1.5rem;
+	}
   }
 
   /* ====================================================== */
