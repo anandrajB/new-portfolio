@@ -5,17 +5,15 @@
 <section class="box about me">
     <div class="content">
     <p>
-      Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in
-      iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus
-      in ornare.
-    </p>
-    <p>
       Experienced backend developer with 3+ years in fintech, specializing in Python, Django, FastAPI, AWS, and React.
       Skilled in crafting scalable, secure systems and solving complex technical challenges. Consistently delivering
       high-performance solutions for financial platforms, with a focus on continuous learning and innovation.
     </p>
-    <p>
+   
+  </div>
+  <div class = "content-2">
+
+     <p class = "text-next">
       Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus
       accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In
       massa tempor nec feugiat nisl pretium fusce.
@@ -29,12 +27,26 @@
 
   .content {
     grid-column: 1 / 4;
+    margin-top: 2rem;
+  }
+
+  
+
+
+  .content-2 {
+    grid-column: 1 / 4;
+    margin-top: 1.5rem;
   }
 
   .content :global(a) {
     text-decoration: 1px solid underline transparent;
     text-underline-offset: 0.25em;
     transition: text-decoration-color var(--theme-transition);
+  }
+
+  .text-next {
+    color: var(--gray-200);
+    margin-top: 1.5rem;
   }
 
   .content :global(a:hover),
