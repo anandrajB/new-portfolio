@@ -85,9 +85,8 @@ const projects = (await getCollection('work'))
 
     <main class="wrapper stack gap-20 lg:gap-48">
       <section class="section with-background with-cta">
-        <header class="section-header stack gap-1 lg:gap-4">
-          <h3>Selected Work</h3>
-          <p>Take a look below at some of my featured work for clients from the past few years.</p>
+        <header class="section-header stack gap-5 lg:gap-6">
+          <h3>Work</h3>
         </header>
 
         <div class="gallery">
@@ -153,7 +152,7 @@ const projects = (await getCollection('work'))
     .hero {
       display: grid;
       grid-template-columns: 6fr 4fr;
-      padding-inline: 2.5rem;
+      /* padding-inline: 0.5rem; */
       gap: 3.75rem;
     }
 
@@ -164,7 +163,7 @@ const projects = (await getCollection('work'))
     }
 
     .hero img {
-      aspect-ratio: 3 / 4;
+      aspect-ratio: 4 / 4;
       border-radius: 4.5rem;
       object-fit: cover;
     }

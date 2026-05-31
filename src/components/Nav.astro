@@ -27,10 +27,11 @@ const isCurrentPage = (href: string) => {
 
 <nav>
 	<div class="menu-header">
-		<!-- <a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-			Anand
-		</a> -->
+		<a href="/" class="site-title">
+			<!-- <Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient /> -->
+			 <!-- <img src="/assets/indexicon.png" alt="Anand's logo" width="40" height="40" /> -->
+			Anand Raj
+		</a>
 		<menu-button>
 			<template>
 				<button class="menu-button" aria-expanded="false">
@@ -146,7 +147,7 @@ const isCurrentPage = (href: string) => {
 
 	.menu-header {
 		display: flex;
-		justify-content: end;
+		justify-content: space-between;
 		gap: 0.5rem;
 		padding: 1.5rem;
 	}
