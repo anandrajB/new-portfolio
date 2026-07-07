@@ -15,5 +15,8 @@
     "@vercel/analytics": "^2.0.1",
     "astro": "^6.4.2",
     "vercel": "^54.6.1"
+  },
+  "devDependencies": {
+    "@astrojs/vercel": "^10.0.8"
   }
 }
