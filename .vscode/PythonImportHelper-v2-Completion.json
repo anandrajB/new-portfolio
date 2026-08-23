@@ -1,0 +1,339 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "importlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "importlib",
+        "description": "importlib",
+        "detail": "importlib",
+        "documentation": {}
+    },
+    {
+        "label": "NoReturn",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.management",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.management",
+        "description": "django.core.management",
+        "detail": "django.core.management",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "vercel_runtime.dev",
+        "description": "vercel_runtime.dev",
+        "isExtraImport": true,
+        "detail": "vercel_runtime.dev",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "unquote",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "aiofiles",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiofiles",
+        "description": "aiofiles",
+        "detail": "aiofiles",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncIterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "LambdaRequest",
+        "kind": 6,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "class LambdaRequest:\n    def __init__(self, path, data=None):\n        req = None\n        runtime_path = '/2018-06-01/runtime/'\n        url = (\n            'http://'\n            + os.environ.get(\n                'AWS_LAMBDA_RUNTIME_API', '127.0.0.1:3000'\n            )\n            + runtime_path",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_runtime_next_invocation",
+        "kind": 2,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "def lambda_runtime_next_invocation():\n    res = LambdaRequest('invocation/next')\n    if res.status_code != 200:\n        raise Exception(\n            'Unexpected /invocation/next response: '\n            + res.body\n        )\n    x_amzn_trace_id = res.get_header('Lambda-Runtime-Trace-Id')\n    if x_amzn_trace_id != None:\n            os.environ['_X_AMZN_TRACE_ID'] = x_amzn_trace_id",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_runtime_invoke_response",
+        "kind": 2,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "def lambda_runtime_invoke_response(result, context):\n    body = json.dumps(result, separators=(',', ':')).encode(\n        encoding='UTF-8'\n    )\n    res = LambdaRequest(\n        'invocation/'\n        + context['aws_request_id']\n        + '/response',\n        body,\n    )",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_runtime_invoke_error",
+        "kind": 2,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "def lambda_runtime_invoke_error(err, context):\n    body = json.dumps(err, separators=(',', ':')).encode(\n        encoding='UTF-8'\n    )\n    res = LambdaRequest(\n        'invocation/'\n        + context['aws_request_id']\n        + '/error',\n        body,\n    )",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_runtime_get_handler",
+        "kind": 2,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "def lambda_runtime_get_handler():\n    (module_name, handler_name) = os.environ['_HANDLER'].split('.')\n    mod = importlib.import_module(module_name)\n    # TODO: invoke `__init__`?\n    return getattr(mod, handler_name)\ndef lambda_runtime_main():\n    if not is_python_3:\n        reload(sys)\n        sys.setdefaultencoding('utf-8')\n    sys.path.insert(",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_runtime_main",
+        "kind": 2,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "def lambda_runtime_main():\n    if not is_python_3:\n        reload(sys)\n        sys.setdefaultencoding('utf-8')\n    sys.path.insert(\n        0, os.environ.get('LAMBDA_TASK_ROOT', '/var/task')\n    )\n    fn = lambda_runtime_get_handler()\n    while True:\n        (event, context) = lambda_runtime_next_invocation()",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "is_python_3",
+        "kind": 5,
+        "importPath": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "description": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "peekOfCode": "is_python_3 = sys.version_info > (3, 0)\nif is_python_3:\n    import urllib.request\nelse:\n    import urllib2\nclass LambdaRequest:\n    def __init__(self, path, data=None):\n        req = None\n        runtime_path = '/2018-06-01/runtime/'\n        url = (",
+        "detail": "node_modules.@vercel.fun.dist.src.runtimes.python.bootstrap",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "node_modules.@vercel.python.templates.vc_cron_detect",
+        "description": "node_modules.@vercel.python.templates.vc_cron_detect",
+        "peekOfCode": "def main():\n    if len(sys.argv) != 3:\n        _error(f\"Expected 2 arguments (module, attribute), got {len(sys.argv) - 1}\")\n    module_name = sys.argv[1]\n    attr_name = sys.argv[2]\n    try:\n        mod = importlib.import_module(module_name)\n    except ImportError as exc:\n        _error(f\"Failed to import module '{module_name}': {exc}\")\n    obj = getattr(mod, attr_name, None)",
+        "detail": "node_modules.@vercel.python.templates.vc_cron_detect",
+        "documentation": {}
+    },
+    {
+        "label": "_Escape",
+        "kind": 6,
+        "importPath": "node_modules.@vercel.python.templates.vc_django_settings",
+        "description": "node_modules.@vercel.python.templates.vc_django_settings",
+        "peekOfCode": "class _Escape(Exception):\n    pass\ndef _stop(*a, **kw):\n    raise _Escape\ndjango.core.management.execute_from_command_line = _stop\nsys.argv = [\"manage.py\"]\ntry:\n    runpy.run_path(\"manage.py\", run_name=\"__main__\")\nexcept _Escape:\n    pass",
+        "detail": "node_modules.@vercel.python.templates.vc_django_settings",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.management.execute_from_command_line",
+        "kind": 5,
+        "importPath": "node_modules.@vercel.python.templates.vc_django_settings",
+        "description": "node_modules.@vercel.python.templates.vc_django_settings",
+        "peekOfCode": "django.core.management.execute_from_command_line = _stop\nsys.argv = [\"manage.py\"]\ntry:\n    runpy.run_path(\"manage.py\", run_name=\"__main__\")\nexcept _Escape:\n    pass\nsettings_module = os.environ.get(\"DJANGO_SETTINGS_MODULE\")\nif not settings_module:\n    print(json.dumps(None))\nelse:",
+        "detail": "node_modules.@vercel.python.templates.vc_django_settings",
+        "documentation": {}
+    },
+    {
+        "label": "sys.argv",
+        "kind": 5,
+        "importPath": "node_modules.@vercel.python.templates.vc_django_settings",
+        "description": "node_modules.@vercel.python.templates.vc_django_settings",
+        "peekOfCode": "sys.argv = [\"manage.py\"]\ntry:\n    runpy.run_path(\"manage.py\", run_name=\"__main__\")\nexcept _Escape:\n    pass\nsettings_module = os.environ.get(\"DJANGO_SETTINGS_MODULE\")\nif not settings_module:\n    print(json.dumps(None))\nelse:\n    import importlib",
+        "detail": "node_modules.@vercel.python.templates.vc_django_settings",
+        "documentation": {}
+    },
+    {
+        "label": "settings_module",
+        "kind": 5,
+        "importPath": "node_modules.@vercel.python.templates.vc_django_settings",
+        "description": "node_modules.@vercel.python.templates.vc_django_settings",
+        "peekOfCode": "settings_module = os.environ.get(\"DJANGO_SETTINGS_MODULE\")\nif not settings_module:\n    print(json.dumps(None))\nelse:\n    import importlib\n    mod = importlib.import_module(settings_module)\n    settings = {k: getattr(mod, k) for k in dir(mod) if k.isupper()}\n    import django\n    print(\n        json.dumps(",
+        "detail": "node_modules.@vercel.python.templates.vc_django_settings",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Item(BaseModel):\n    name: str\n    description: str | None\nitems = [\n    Item(name=\"Plumbus\", description=\"A multi-purpose household device.\"),\n    Item(name=\"Portal Gun\", description=\"A portal opening device.\"),\n    Item(name=\"Meeseeks Box\", description=\"A box that summons a Meeseeks.\"),\n]\n@app.get(\"/items/stream\")\nasync def stream_items() -> AsyncIterable[Item]:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "ItemSearchFilter",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class ItemSearchFilter(BaseModel):\n    category: str\n    min_price: float | None = None\n    tags: list[str] = []\n# Map the route explicitly to the \"QUERY\" HTTP method\n@app.api_route(\"/items/search\", methods=[\"QUERY\"])\nasync def search_items(filters: ItemSearchFilter):\n    # Simulated search logic (this safely reads data using a request body)\n    results = [\n        {\"id\": 1, \"name\": \"Laptop\", \"category\": filters.category, \"price\": 1200},",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\ntemplates = Jinja2Templates(directory=\"templates\")\n# @app.post('/upload')\n# async def upload(request: Request):\n#     try:\n#         filename = request.headers['filename']\n#         filename = unquote(filename)\n#         filepath = os.path.join('./', os.path.basename(filename))\n#         async with aiofiles.open(filepath, 'wb') as f:\n#             async for chunk in request.stream():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "templates",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"templates\")\n# @app.post('/upload')\n# async def upload(request: Request):\n#     try:\n#         filename = request.headers['filename']\n#         filename = unquote(filename)\n#         filepath = os.path.join('./', os.path.basename(filename))\n#         async with aiofiles.open(filepath, 'wb') as f:\n#             async for chunk in request.stream():\n#                 await f.write(chunk)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nclass Item(BaseModel):\n    name: str\n    description: str | None\nitems = [\n    Item(name=\"Plumbus\", description=\"A multi-purpose household device.\"),\n    Item(name=\"Portal Gun\", description=\"A portal opening device.\"),\n    Item(name=\"Meeseeks Box\", description=\"A box that summons a Meeseeks.\"),\n]\n@app.get(\"/items/stream\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "items",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "items = [\n    Item(name=\"Plumbus\", description=\"A multi-purpose household device.\"),\n    Item(name=\"Portal Gun\", description=\"A portal opening device.\"),\n    Item(name=\"Meeseeks Box\", description=\"A box that summons a Meeseeks.\"),\n]\n@app.get(\"/items/stream\")\nasync def stream_items() -> AsyncIterable[Item]:\n    for item in items:\n        yield item\nclass ItemSearchFilter(BaseModel):",
+        "detail": "main",
+        "documentation": {}
+    }
+]
